@@ -1,0 +1,208 @@
+/* Chronicles */
+/* Base Chronicles theme created by Hanhula. Colours are set to random, incomprehensible settings to make it easy to understand which piece is which.
+When the Chronicles CSS update comes out, expect most of this to need to be rewritten. */
+
+/* Chronicles tool sidebar thing */
+.chronos-chronicle-toolbar {
+    background-color: indianred !important;
+}
+
+.chronos-chronicle-toolbar .chronicle-toolbar-button i {
+  color: indigo !important;
+}
+
+/* Chronicles date bar that hangs out below all the lanes */
+
+.chronos-chronicle-utd-bar {
+    background-color: aqua !important;
+    border-top: 2px solid wheat;
+}
+
+.chronos-chronicle-utd-bar svg {
+    filter: invert(44%) sepia(1%) saturate(1453%) hue-rotate(165deg) brightness(181%) contrast(82%) !important; /* SVGs can't be colourchanged with colour, so you'll need to filter them.. there are sites that help, but uh, good luck */
+}
+
+/* Timeline laaaaanes - don't remove the !importants they're excessive but they're the only way to fight Xuroth's CSS */
+
+.chronos-timeline-slot .chronos-timeline-lane {
+    background-color: chocolate !important;
+}
+  
+[class^=chronos-timelines-con] [class^=chronos-timeline-wrapp] .chronos-timeline-slots {
+    background-color: cadetblue !important;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+}
+
+[class^=chronos-timelines-con] [class^=chronos-timeline-wrapp] .chronos-timeline-slots .chronos-timeline-slot .chronos-timeline-title {
+    background: chartreuse !important;
+    color: lavender !important;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+}
+
+[class^=chronos-timelines-con] .chronos-timeline-navigation-button {
+    background: darkred !important;
+}
+
+/* Left & right nav buttons */
+
+[class^=chronos-timelines-con] .chronos-timeline-navigation-button[nav-direction=prev] {
+  border: none !important;
+}
+
+[class^=chronos-timelines-con] .chronos-timeline-navigation-button[nav-direction=next] {
+    border: none !important;
+}
+
+[class^=chronos-timelines-con] .chronos-timeline-navigation-button:hover[nav-direction=prev] {
+    box-shadow: -10px 0 15px -6px darkkhaki !important;
+}
+
+[class^=chronos-timelines-con] .chronos-timeline-navigation-button:hover[nav-direction=next] {
+    box-shadow: 10px 0 15px -6px firebrick !important;
+}
+
+/* The year stick thing that hangs out in the middle of the screen */
+
+.chronicle-history-dial {
+  background-color: royalblue !important;
+}
+
+.chronicle-history-dial .chronicle-history-display .chronicle-date-display {
+    background-color: rosybrown !important;
+}
+
+/* Chronicles title info */
+
+.chronos-chronicle-title .chronos-world-title-box {
+    background-color: gold !important;
+}
+
+.chronos-chronicle-title .chronos-chronicle-title-box {
+    background-color: gainsboro !important;
+}
+
+.chronos-chronicle-title .chronos-chronicle-name {
+    color: orange !important;
+}
+
+/* Map background colour */
+.chronos-map-viewport {
+    background: orchid !important;
+}
+
+.navigation-button-box .chronos-icon {
+    color: rosybrown !important; /* I can't remember what this is for and deleting it doesn't seem to do anything but you know what I'll probably find out what it's fixing later if I delete it now */
+}
+
+/* Chronicles global search box in the top left */
+
+.chronos-global-search .chronos-global-search-bar {
+    background-color: olivedrab !important;
+}
+
+.chronos-global-search input {
+    color: saddlebrown !important;
+}
+
+.chronos-global-search .chronos-global-search-bar .chronos-sidebar-toggle, .chronos-global-search .chronos-global-search-bar .chronos-global-search-filters-toggle, .chronos-global-search .chronos-global-search-bar .chronos-sidebar-toggle.active {
+    background-color: rebeccapurple !important;
+    color: peachpuff !important;
+}
+
+.chronos-global-search {
+    box-shadow: 0px 0px 10px 1px yellow !important;
+}
+
+/* Chronicles timeline event popup */
+
+.chronos-event-popup {
+    background: paleturquoise;
+}
+
+.chronos-event-popup .chronos-popup-excerpt {
+    font-family: Comic Sans !important;
+    color: salmon !important;
+}
+
+.chronos-event-popup [class^=chronos-popup-bo] .chronos-read-more {
+    padding-top: 10px;
+    color: slateblue !important;
+    font-family: Comic Sans !important;
+}
+
+.chronos-event-popup [class^=chronos-popup-bo] hr, .chronos-sidebar .chronos-sidebar-content [class^=chronos-sidebar-bo] .chronos-sidebar-separator {
+    border-color: violet !important;
+    border-width: 2px;
+}
+
+.chronos-event-popup .chronos-popup-title {
+    color: forestgreen !important;
+}
+
+.chronicle .chronos-event-popup .chronos-popup-date {
+    color: orange;
+    font-size: 0.9em;
+    font-family: Comic Sans;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Sidebar - the thing that opens when you open an event */
+
+.chronos-sidebar {
+    background: powderblue;
+}
+
+.chronos-sidebar .chronos-sidebar-content [class^=chronos-sidebar-bo] .chronos-sidebar-type span, .chronos-sidebar .chronos-sidebar-content [class^=chronos-sidebar-bo] .chronos-sidebar-date-display {
+    font-family: Comic Sans;
+    color: plum !important;
+    border-color: palegoldenrod !important;
+}
+
+.chronos-sidebar .chronos-sidebar-content [class^=chronos-sidebar-bo] .chronos-sidebar-title {
+    font-size: 2.2em;
+    color: pink;
+}
+
+/* Bottom bar with all the history shenanigans */
+
+[class^=chronos-history-con] {
+    background: yellow !important;
+}
+
+[class^=chronos-history-con] .chronos-history-navigation-bar {
+    border-top: 2px solid red;
+}
+
+/* Scrollbar colours - browser-dependent */
+
+.chronicle#chronicle-root [class^=chronos-history-con] ::-webkit-scrollbar-track {
+    background: transparent !important; /* For Chrome */
+  }
+  
+.chronicle#chronicle-root [class^=chronos-history-con] ::-webkit-scrollbar-thumb {
+    background: blue; /* For Chrome */
+}
+  
+.chronicle#chronicle-root [class^=chronos-history-con] {
+    scrollbar-color: blue transparent; /* For Firefox */
+}
+
+/* Chronos tooltips for when you hover over events */
+
+#chronos-event-tooltip {
+    background: pink;
+  }
+  
+#chronos-event-tooltip.place-top::after {
+    border-top-color: pink;
+}
+
+/* Chronos editing buttons */
+
+/* Green plus button that adds stuff */
+.chronos-chronicle-controls button.chronos-btn.chronos-btn-success {
+    background-color: palevioletred;
+}
