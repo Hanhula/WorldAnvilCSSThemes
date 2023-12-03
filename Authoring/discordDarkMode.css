@@ -1,0 +1,319 @@
+/** Han's Editor Changes - Discord Dark Mode Theme **/
+
+/* Theme variables */
+* {
+    --background-terror: #2b2d31;
+    --darkest-terror-transparent: #1e1f22;
+    --darkest-terror: #1e1f22;
+    --darker-terror: #313338;
+    --dark-terror: #383a40;
+    --light-terror: #404249;
+    --lighter-terror: #66686d;
+    --lightest-terror: #b6bac0;
+    --lightgrey: #d1d1d1;
+    --off-white: #dadada;
+    --default: #279093;
+    --default-hover: #197477;
+    --primary: #6b327b;
+    --primary-dark: #4e2959;
+    --primary-hover: #562865;
+    --create: #79478b;
+    --create-dark: #42244d;
+    --create-light: #ba6fd7;
+    --info: #188599;
+}
+
+/* Main page */
+.domain-global,
+.subdomain-global {
+    background: var(--background-terror) !important
+}
+
+/* Tables */
+
+.table tr td {
+    border-top: 1px solid var(--light-terror) !important;
+}
+
+.articles-list th,
+.dataTable.table th,
+table#rpg-list.table th,
+.ibox-content .table th {
+    background: var(--background-terror) !important;
+}
+
+/* Code Editor */
+@font-face {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+.card-box textarea.form-control.article-vignette {
+    min-height: 20vh !important;
+}
+
+.CodeMirror pre.CodeMirror-line,
+.CodeMirror pre.CodeMirror-line-like {
+    color: #eee !important;
+    font-family: OpenSans;
+    font-size: 13px !important;
+    font-weight: 400;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+}
+
+.CodeMirror-matchingtag {
+    background: #3053748f;
+}
+
+.cm-link-title {
+    color: #7ddded !important;
+    font-weight: 400;
+}
+
+.CodeMirror-line span.cm-link {
+    color: #38bdcd;
+    text-decoration: underline;
+}
+
+.cm-s-lesser-dark.CodeMirror,
+.CodeMirror-gutter {
+    background: var(--background-terror);
+}
+
+.CodeMirror-buttonsPanel button {
+    color: var(--lightest-terror);
+}
+
+/* Competition display changes */
+
+.competition-wrapper .duel-completed {
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.competition-wrapper .duel-title {
+    color: white;
+    font-family: Bungee !important;
+}
+
+/* Heroes */
+
+.domain-heroes.subdomain-live .d-none {
+    display: flex !important;
+}
+
+.journal-content-control {
+    font-family: var(--font-family-sans-serif);
+}
+
+/* The success toast - no idea if this is still necessary but it's a pain in the arse to check */
+.toast-success {
+    background-color: #51a351 !important;
+}
+
+/* Image page tweaks */
+
+#apollo-wrapper {
+    background: var(--darker-terror) !important;
+}
+
+#apollo-left-content [id^=apollo-file-uploader-contain] {
+    background: var(--create-dark);
+}
+
+#apollo-right-content .background-white {
+    background-color: var(--darkest-terror);
+}
+
+.apollo-file-tile {
+    height: 400px;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#apollo-right-content .background-white .img-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: block;
+}
+
+/* Navigation (overall and also article stuff) */
+
+.nav li a {
+    color: var(--lightgrey) !important;
+}
+
+.article-navigation .ibox-content a.nav-link,
+.article-navigation .ibox-content {
+    background-color: var(--background-terror) !important;
+}
+
+.article-ancillary-wrapper .ibox-content a.nav-link,
+.article-ancillary-wrapper .ibox-content {
+    background-color: var(--darkest-terror) !important;
+}
+
+.article-navigation .ibox-content a.nav-link:hover {
+    background-color: var(--dark-terror) !important;
+}
+
+.article-ancillary-wrapper .ibox-content a.nav-link:hover {
+    background-color: var(--darker-terror) !important;
+}
+
+.global-side-navbar,
+.nav-header,
+.global-top-navbar {
+    background: var(--darkest-terror) !important;
+}
+
+.metismenu li a:hover {
+    background: var(--primary-hover) !important;
+}
+
+.dropdown-menu i {
+    color: var(--default);
+}
+
+/* Notebook */
+
+div#notebook-wrapper .col-md-4 {
+    background: var(--darkest-terror);
+}
+
+#notebook-wrapper .col-line {
+    border-color: var(--light-terror);
+}
+
+.note-content,
+.note-title {
+    background: var(--darker-terror) !important;
+}
+
+/* I can't remember where exactly these changes are for or  they're general */
+
+.ibox-content .list-unstyled a {
+    color: var(--off-white);
+}
+
+.btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--background-terror);
+    border-color: var(--darker-terror);
+}
+
+.btn-supermuted {
+    color: var(--lightest-terror) !important;
+}
+
+.super-buttons-trigger:hover {
+    background: var(--create-light);
+}
+
+/* FORMS */
+.form-control {
+    background-color: var(--background-terror) !important;
+    border-color: var(--dark-terror) !important;
+    color: var(--off-white) !important;
+}
+
+#explore-bar .form-control {
+    background-color: var(--dark-terror) !important;
+}
+
+#explore-bar .form-control::placeholder {
+    color: #aaaebb !important;
+}
+
+/* Articles page */
+.athena-article-listitem .ibox-content,
+.athena-article-listitem .card-box,
+.athena-article-listitem .ibox-content {
+    background: var(--dark-terror) !important;
+    border: 1px solid var(--dark-terror) !important;
+}
+
+#explore-menu-selector .explorer-nav-button i {
+    color: var(--lighter-terror);
+}
+
+#explore-menu-selector .explorer-nav-button:hover i {
+    color: var(--highlight-light);
+}
+
+#explore-menu-selector .explorer-nav-button.active i {
+    color: var(--highlight);
+}
+
+.ibox .btn {
+    background: var(--primary);
+}
+
+.ibox .btn:hover {
+    background: var(--primary-hover);
+}
+
+/* Maps */
+div#map {
+    background: var(--background-terror) !important;
+}
+
+.context-menu-secondary ul,
+.context-menu-secondary li.nav-item a.nav-link {
+    background: var(--dark-terror);
+}
+
+/* Article edit menu */
+.article-background {
+    background: var(--background-terror);
+}
+
+.article-content-header {
+    padding: unset;
+    padding-top: 0.3em;
+    background: var(--darkest-terror);
+}
+
+.bootstrap-tagsinput {
+    background-color: var(--darker-terror) !important;
+    border-color: var(--light-terror) !important;
+}
+
+.select2 {
+    border-color: var(--light-terror) !important;
+}
+
+.select2 .select2-selection {
+    background-color: var(--darker-terror);
+    border: 1px solid var(--background-terror);
+}
+
+.canvas {
+    min-height: 2160px !important;
+}
+
+#template-data {
+    background: var(--background-terror);
+    padding: 0.5em;
+}
+
+#template-data .card-box {
+    background: var(--darkest-terror) !important;
+}
+
+#extraTemplates.collapse:not(.show) {
+    display: unset;
+}
+
+a[href$=extraTemplates] {
+    display: none;
+}
