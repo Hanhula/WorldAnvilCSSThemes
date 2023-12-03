@@ -318,3 +318,9 @@ div#map {
 a[href$=extraTemplates] {
     display: none;
 }
+
+/* Notifs */
+.notification-card .notification-wrapper blockquote {
+    color: var(--off-white);
+    background: var(--darker-terror);
+}
