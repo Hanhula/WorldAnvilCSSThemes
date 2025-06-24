@@ -22,6 +22,14 @@
     --create-dark: #42244d;
     --create-light: #ba6fd7;
     --info: #188599;
+    --wa-colors-background-average: var(--darker-terror);
+    --wa-colors-foreground-weak: var(--lightgrey);
+    --wa-colors-background-strongest: var(--darkest-terror);
+    --wa-colors-dark-5: #25272b;
+    --wa-colors-dark-4: var(--darkest-terror);
+    --wa-colors-dark-3: var(--darkest-terror);
+    --wa-colors-dark-2: var(--darker-terror);
+    --wa-colors-dark-1: var(--dark-terror);
 }
 
 /* Main page */
@@ -51,6 +59,9 @@ table#rpg-list.table th,
     src: url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2);
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
+
+/* WA HAS UPDATED ITS EDITOR AND THUS THE BELOW LIKELY NO LONGER APPLIES - I AM USING IT AS A REFERENCE
+* START LIKELY-DEFUNCT CODE */
 
 .card-box textarea.form-control.article-vignette {
     min-height: 20vh !important;
@@ -90,6 +101,92 @@ table#rpg-list.table th,
 
 .CodeMirror-buttonsPanel button {
     color: var(--lightest-terror);
+}
+
+/* END OF LIKELY-DEFUNCT CODE */
+
+/* Current Euclid editor code */
+.cm-theme.euclid-editor {
+    .cm-editor {
+        font-size: 16px;
+        font-family: OpenSans;
+        color: #eee;
+        background: var(--background-terror);
+
+        .cm-line,
+        .cm-activeLine {
+            font-family: OpenSans;
+            font-size: 0.85em;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            word-spacing: 0.2px;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            line-height: 1.7em;
+        }
+
+        .cm-activeLine {
+            background: inherit;
+        }
+    }
+
+    .cm-gutters {
+        border-right: 1px solid var(--lighter-terror);
+
+        .cm-foldGutter,
+        .cm-lineNumbers .cm-gutterElement {
+            background: var(--background-terror);
+        }
+
+        .cm-lineNumbers {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            background: var(--background-terror);
+
+            .cm-gutterElement {
+                color: #67696D !important;
+
+            }
+        }
+
+        .cm-activeLineGutter {
+            background: inherit;
+        }
+    }
+}
+
+/* STOP HIDING THE TOOLBAR WORLDANVIL - optional, uncomment this if you want it */
+/* .euclid-editor-toolbar {
+    visibility: visible !important;
+    position: relative;
+    opacity: 1;
+
+    button.chakra-button {
+        visibility: visible;
+        background: var(--wa-colors-background-average);
+        color: var(--lightest-terror);
+    }
+} */
+
+.cm-mention-completion .cm-completionLabel {
+    font-family: OpenSans;
+    font-size: 14px;
+}
+
+.euclid-mentions-tooltip.cm-tooltip.cm-tooltip-autocomplete ul li,
+.euclid-mentions-tooltip.cm-tooltip.cm-tooltip-autocomplete ul completion-section {
+    /* not actually sure what completion-section is but WA's defaults used it like this so... */
+    padding: 5px;
+}
+
+.euclid-mentions-tooltip.cm-tooltip.cm-tooltip-autocomplete ul li:hover {
+    background: var(--light-terror);
 }
 
 /* Competition display changes */
@@ -323,4 +420,18 @@ a[href$=extraTemplates] {
 .notification-card .notification-wrapper blockquote {
     color: var(--off-white);
     background: var(--darker-terror);
+}
+
+/* Bring back the colours! Thank you @Mochi & @Catoblepon */
+
+.prodromos-notifications-modal__item__icon .fa-heart {
+    color: #bb1b1b;
+}
+
+.prodromos-notifications-modal__item__icon .fa-comment {
+    color: #4242a1;
+}
+
+.prodromos-notifications-modal__item__icon .fa-globe-stand {
+    color: #43a142;
 }
