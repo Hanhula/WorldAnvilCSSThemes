@@ -35,7 +35,7 @@
 /* Main page */
 .domain-global,
 .subdomain-global {
-    background: var(--background-terror) !important
+    background: var(--background-terror) !important;
 }
 
 /* Tables */
